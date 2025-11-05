@@ -3,6 +3,8 @@
 
   A modern React website for children's art posters with custom sizing and ordering system. This project creates a beautiful, responsive website for selling customizable children's art prints.
 
+  🌐 **Live Site**: https://happy-meadow-0e1c5a11e.3.azurestaticapps.net/
+
   ## Features
 
   - Modern React + TypeScript frontend
