@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.*
+.DS_Store
+*.log
+*.tgz
+vite-env.d.ts
+/.idea/
+.vscode/
+shopify-theme.zip
+The-Little-Prints-dist.zip

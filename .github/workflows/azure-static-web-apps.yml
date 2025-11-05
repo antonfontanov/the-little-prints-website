@@ -1,0 +1,38 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy to Azure Static Web Apps
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false # do not persist the token in the git config
+          fetch-depth: 0 # fetch all history for proper deployment operations
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build app
+        run: npm run build
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }} # set in your GitHub repo secrets
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # used by the action
+          action: "upload"
+          app_location: "/"
+          api_location: ""
+          output_location: "dist"
