@@ -6,7 +6,7 @@ import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 import { Upload, CreditCard, FileImage, Check } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 
 interface OrderFormProps {
   onNavigate: (page: string, orderData?: any) => void;
@@ -57,17 +57,17 @@ export function OrderForm({ onNavigate }: OrderFormProps) {
     }
 
     const orderData = {
-      files: uploadedFiles,
-      background: selectedBackground,
-      notes: personalNotes,
-      customer: customerInfo,
+      uploadedFiles: uploadedFiles,
+      selectedBackground: selectedBackground,
+      personalNotes: personalNotes,
+      customerInfo: customerInfo,
       total: uploadedFiles.length * 40,
       orderNumber: `LM${Date.now()}`,
       estimatedDelivery: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toLocaleDateString()
     };
 
-    toast.success("Order submitted successfully!");
-    onNavigate('confirmation', orderData);
+    toast.success("Proceeding to payment...");
+    onNavigate('payment', orderData);
   };
 
   return (

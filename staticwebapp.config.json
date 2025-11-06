@@ -28,6 +28,10 @@
       "rewrite": "/index.html"
     },
     {
+      "route": "/payment",
+      "rewrite": "/index.html"
+    },
+    {
       "route": "/confirmation",
       "rewrite": "/index.html"
     }

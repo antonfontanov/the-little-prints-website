@@ -4,6 +4,7 @@ import { HomePage } from "./components/HomePage";
 import { ExamplesPage } from "./components/ExamplesPage";
 import { LearnMorePage } from "./components/LearnMorePage";
 import { OrderForm } from "./components/OrderForm";
+import { StripePayment } from "./components/StripePayment";
 import { ConfirmationPage } from "./components/ConfirmationPage";
 import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
@@ -41,6 +42,12 @@ export default function App() {
         return <LearnMorePage onNavigate={handleNavigate} />;
       case 'order':
         return <OrderForm onNavigate={handleNavigate} />;
+      case 'payment':
+        return <StripePayment 
+          orderData={orderData} 
+          onSuccess={() => handleNavigate('confirmation')}
+          onCancel={() => handleNavigate('order')}
+        />;
       case 'confirmation':
         return <ConfirmationPage orderData={orderData} onNavigate={handleNavigate} />;
       default:
