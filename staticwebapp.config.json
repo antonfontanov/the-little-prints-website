@@ -10,14 +10,6 @@
   },
   "routes": [
     {
-      "route": "/lander",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/lander/*",
-      "rewrite": "/index.html"
-    },
-    {
       "route": "/examples",
       "rewrite": "/index.html"
     },
