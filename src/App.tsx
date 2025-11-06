@@ -16,14 +16,17 @@ export default function App() {
   // Handle URL changes
   useEffect(() => {
     const path = window.location.pathname;
-    const page = path.substring(1) || 'home';
+    // Handle /lander base path
+    const cleanPath = path.startsWith('/lander') ? path.substring(7) : path;
+    const page = cleanPath.substring(1) || 'home';
     setCurrentPage(page);
   }, []);
 
   const handleNavigate = (page: string, data?: any) => {
     setCurrentPage(page);
-    // Update URL without page reload
-    const url = page === 'home' ? '/' : `/${page}`;
+    // Update URL without page reload - handle /lander base path
+    const basePath = window.location.pathname.startsWith('/lander') ? '/lander' : '';
+    const url = page === 'home' ? basePath || '/' : `${basePath}/${page}`;
     window.history.pushState(null, '', url);
     
     if (data) {
