@@ -72,6 +72,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <Button 
                   variant="outline" 
                   size="lg"
+                  onClick={() => onNavigate('examples')}
                   className="rounded-full px-8 py-3 text-lg border-primary/20 hover:bg-primary/5"
                 >
                   See Examples
@@ -254,6 +255,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <Button 
                 variant="outline" 
                 size="lg"
+                onClick={() => onNavigate('learn-more')}
                 className="rounded-full px-8 py-3 text-lg border-primary/20 hover:bg-primary/5"
               >
                 Learn More

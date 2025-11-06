@@ -4,9 +4,27 @@
     "exclude": [
       "/images/*.{png,jpg,gif,svg}",
       "/assets/*",
-      "/favicon.ico"
+      "/favicon.ico",
+      "/favicon.svg"
     ]
   },
-  "routes": [],
+  "routes": [
+    {
+      "route": "/examples",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/learn-more", 
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/order",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/confirmation",
+      "rewrite": "/index.html"
+    }
+  ],
   "responseOverrides": {}
 }

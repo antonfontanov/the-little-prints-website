@@ -24,7 +24,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             <span className="text-xl text-primary tracking-tight">The Little Prints</span>
           </div>
           
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             <button 
               onClick={() => onNavigate('home')}
               className={`text-sm transition-colors hover:text-primary ${
@@ -32,6 +32,22 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
               }`}
             >
               Home
+            </button>
+            <button 
+              onClick={() => onNavigate('examples')}
+              className={`text-sm transition-colors hover:text-primary ${
+                currentPage === 'examples' ? 'text-primary' : 'text-muted-foreground'
+              }`}
+            >
+              Examples
+            </button>
+            <button 
+              onClick={() => onNavigate('learn-more')}
+              className={`text-sm transition-colors hover:text-primary ${
+                currentPage === 'learn-more' ? 'text-primary' : 'text-muted-foreground'
+              }`}
+            >
+              How It Works
             </button>
             <button 
               onClick={() => onNavigate('order')}
