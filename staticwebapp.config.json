@@ -9,9 +9,7 @@
       "/*.{css,js,png,jpg,gif,svg,ico,json,woff,woff2,ttf,eot}"
     ]
   },
-  "globalHeaders": {
-    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
-  },
+
   "routes": [
     {
       "route": "/",
