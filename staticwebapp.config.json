@@ -36,5 +36,12 @@
       "rewrite": "/index.html"
     }
   ],
-  "responseOverrides": {}
+  "globalHeaders": {
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html"
+    }
+  }
 }
