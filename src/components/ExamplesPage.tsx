@@ -10,86 +10,128 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
   const examples = [
     {
       id: 1,
-      title: "Rainbow Butterfly",
+      title: "Rainbow & Sun",
       childAge: "Age 6",
       childName: "Emma",
-      description: "A vibrant butterfly with rainbow wings, beautifully transformed into a professional poster.",
-      originalImage: "/examples/original-1.jpg", // You'll need to add these images
-      posterImage: "/examples/poster-1.jpg",
+      description: "A beautiful rainbow with clouds and bright sun, perfectly transformed into a vibrant poster.",
+      originalImage: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=500&fit=crop",
+      posterImage: "/examples/rainbow-poster.jpg",
       customerFeedback: {
         parentName: "Sarah M.",
         rating: 5,
-        comment: "Emma was so excited to see her butterfly drawing turned into a real poster! The colors came out beautifully and it now has a special place in her bedroom. The quality exceeded our expectations."
+        comment: "Emma was so excited to see her rainbow drawing turned into a real poster! The colors came out beautifully and it now has a special place in her bedroom."
       }
     },
     {
       id: 2,
-      title: "Space Adventure",
-      childAge: "Age 8",
-      childName: "Jake",
-      description: "An imaginative space scene with rockets and planets, perfectly preserved in poster format.",
-      originalImage: "/examples/original-2.jpg",
-      posterImage: "/examples/poster-2.jpg",
+      title: "Happy Boy Portrait",
+      childAge: "Age 5",
+      childName: "Max",
+      description: "A cheerful boy portrait with spiky hair and bow tie, transformed into an adorable keepsake.",
+      originalImage: "https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=500&h=500&fit=crop",
+      posterImage: "/examples/boy-poster.jpg",
       customerFeedback: {
-        parentName: "Mike T.",
+        parentName: "Lisa K.",
         rating: 5,
-        comment: "Jake's space drawing looks incredible as a poster! He tells everyone who visits about his 'real' artwork hanging on the wall. It's become such a confidence booster for him."
+        comment: "Max drew himself and seeing it as a professional poster made him so proud! It's hanging in our living room and everyone loves it."
       }
     },
     {
       id: 3,
-      title: "Family Portrait",
-      childAge: "Age 5",
-      childName: "Lily",
-      description: "A sweet family drawing with stick figures, transformed into a cherished keepsake.",
-      originalImage: "/examples/original-3.jpg",
-      posterImage: "/examples/poster-3.jpg",
+      title: "Cozy House Scene",
+      childAge: "Age 7",
+      childName: "Sophie",
+      description: "A charming house with trees and sunshine, beautifully enhanced with professional framing.",
+      originalImage: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=500&h=500&fit=crop",
+      posterImage: "/examples/house-poster.jpg",
       customerFeedback: {
-        parentName: "Lisa K.",
+        parentName: "Mike T.",
         rating: 5,
-        comment: "This family portrait that Lily drew is now our favorite piece of art in the house. Grandparents love it too! The poster quality is amazing and really makes her artwork shine."
+        comment: "Sophie's house drawing looks incredible as a poster! The warm colors and professional quality make it a centerpiece in our home."
       }
     },
     {
       id: 4,
-      title: "Ocean Scene",
-      childAge: "Age 7",
-      childName: "Alex",
-      description: "An underwater adventure with fish and seahorses, beautifully enhanced with professional printing.",
-      originalImage: "/examples/original-4.jpg",
-      posterImage: "/examples/poster-4.jpg",
+      title: "Girl with Flowers",
+      childAge: "Age 8",
+      childName: "Isabella",
+      description: "A sweet girl surrounded by colorful flowers, preserved as a beautiful wall art piece.",
+      originalImage: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=500&h=500&fit=crop",
+      posterImage: "/examples/girl-poster.jpg",
       customerFeedback: {
         parentName: "Jennifer R.",
         rating: 5,
-        comment: "Alex's ocean drawing looks so professional now! The colors are vibrant and the poster material feels high-quality. It's the perfect way to showcase his creativity."
+        comment: "Isabella's flower garden drawing brings so much joy to her room. The transformation from crayon to poster is remarkable!"
       }
     },
     {
       id: 5,
-      title: "Flower Garden",
-      childAge: "Age 4",
-      childName: "Sophia",
-      description: "A colorful garden scene filled with flowers and sunshine, preserved as a beautiful poster.",
-      originalImage: "/examples/original-5.jpg",
-      posterImage: "/examples/poster-5.jpg",
+      title: "Space Rocket Adventure",
+      childAge: "Age 9",
+      childName: "Lucas",
+      description: "An exciting rocket ship with stars, perfectly capturing a child's space dreams.",
+      originalImage: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=500&fit=crop",
+      posterImage: "/examples/rocket-poster.jpg",
       customerFeedback: {
         parentName: "David L.",
         rating: 5,
-        comment: "Sophia's flower garden drawing brings so much joy to our living room. The transformation from crayon drawing to professional poster is remarkable. Highly recommend!"
+        comment: "Lucas's space adventure looks amazing as a poster! He tells everyone about his 'real' artwork. It's been a huge confidence booster."
       }
     },
     {
       id: 6,
-      title: "Dinosaur World",
-      childAge: "Age 9",
-      childName: "Connor",
-      description: "An action-packed dinosaur scene, transformed into an impressive wall art piece.",
-      originalImage: "/examples/original-6.jpg",
-      posterImage: "/examples/poster-6.jpg",
+      title: "Friendly Cat",
+      childAge: "Age 6",
+      childName: "Zoe",
+      description: "An adorable orange cat with a heart, transformed into a heartwarming poster.",
+      originalImage: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&h=500&fit=crop",
+      posterImage: "/examples/cat-poster.jpg",
       customerFeedback: {
         parentName: "Rachel H.",
         rating: 5,
-        comment: "Connor's dinosaur drawing looks amazing as a poster! He's so proud to show it off to his friends. The quality is excellent and it really makes his artwork look professional."
+        comment: "Zoe's cat drawing is now her favorite thing in her bedroom! The poster quality exceeded our expectations."
+      }
+    },
+    {
+      id: 7,
+      title: "Dinosaur Discovery",
+      childAge: "Age 8",
+      childName: "Oliver",
+      description: "A friendly green dinosaur in a sunny landscape, perfectly preserved as professional wall art.",
+      originalImage: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=500&fit=crop",
+      posterImage: "/examples/dinosaur-poster.jpg",
+      customerFeedback: {
+        parentName: "Amanda S.",
+        rating: 5,
+        comment: "Oliver's dinosaur drawing looks so professional now! He's incredibly proud and shows it off to everyone who visits."
+      }
+    },
+    {
+      id: 8,
+      title: "Playground Fun",
+      childAge: "Age 7",
+      childName: "Mia",
+      description: "A joyful child on a swing with clouds above, capturing pure childhood happiness.",
+      originalImage: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&h=500&fit=crop",
+      posterImage: "/examples/playground-poster.jpg",
+      customerFeedback: {
+        parentName: "Thomas B.",
+        rating: 5,
+        comment: "Mia's playground drawing brings back wonderful memories. The poster quality is fantastic and it's become a family treasure."
+      }
+    },
+    {
+      id: 9,
+      title: "Mother & Child",
+      childAge: "Age 5",
+      childName: "Lily",
+      description: "A touching family portrait showing the special bond between mother and child.",
+      originalImage: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=500&h=500&fit=crop",
+      posterImage: "/examples/family-poster.jpg",
+      customerFeedback: {
+        parentName: "Karen W.",
+        rating: 5,
+        comment: "This drawing of Lily and me is our most treasured artwork. Seeing it as a professional poster makes it even more special."
       }
     }
   ];
@@ -120,6 +162,39 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
         </div>
       </section>
 
+      {/* Quick Gallery Preview */}
+      <section className="py-12 bg-white/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-8 text-foreground">
+            Popular Artwork Styles We Transform
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {examples.slice(0, 10).map((example, index) => (
+              <div key={example.id} className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                  <img 
+                    src={example.originalImage}
+                    alt={example.title}
+                    className="w-full aspect-square object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-2 left-2 right-2">
+                      <p className="text-white text-xs font-medium truncate">{example.title}</p>
+                      <p className="text-white/80 text-xs">{example.childAge}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-muted-foreground">
+              From rainbows to rockets, houses to hearts - we transform every masterpiece! ✨
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Examples Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -135,22 +210,22 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
                         <p className="text-muted-foreground">By {example.childName}, {example.childAge}</p>
                       </div>
                       
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 gap-4">
                         <div className="text-center">
-                          <p className="text-sm font-medium text-muted-foreground mb-2">Original Drawing</p>
-                          <div className="bg-gray-100 rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-gray-300">
-                            <div className="text-center p-4">
-                              <Heart className="w-8 h-8 mx-auto mb-2 text-primary" />
-                              <p className="text-sm text-muted-foreground">Original<br/>Artwork</p>
+                          <p className="text-sm font-medium text-muted-foreground mb-3">From Drawing to Beautiful Poster</p>
+                          <div className="relative">
+                            <img 
+                              src={example.originalImage}
+                              alt={`${example.title} - Original artwork by ${example.childName}`}
+                              className="w-full aspect-square object-cover rounded-lg shadow-md border-4 border-white"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-200/40 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                              <div className="bg-white/90 backdrop-blur-sm rounded-full p-4">
+                                <Star className="w-8 h-8 text-primary fill-current" />
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                        <div className="text-center">
-                          <p className="text-sm font-medium text-muted-foreground mb-2">Professional Poster</p>
-                          <div className="bg-gradient-to-br from-primary/10 to-purple-100 rounded-lg aspect-square flex items-center justify-center border-2 border-primary/20">
-                            <div className="text-center p-4">
-                              <Star className="w-8 h-8 mx-auto mb-2 text-primary fill-current" />
-                              <p className="text-sm text-primary font-medium">Beautiful<br/>Poster</p>
+                            <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-2 shadow-lg">
+                              <Heart className="w-4 h-4 fill-current" />
                             </div>
                           </div>
                         </div>
