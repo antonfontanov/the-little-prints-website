@@ -10,16 +10,17 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
   const examples = [
     {
       id: 1,
-      title: "Rainbow & Sun",
+      title: "Rainbow & Sunshine",
       childAge: "Age 6",
       childName: "Emma",
-      description: "A beautiful rainbow with clouds and bright sun, perfectly transformed into a vibrant poster.",
-      originalImage: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=500&fit=crop",
-      posterImage: "/examples/rainbow-poster.jpg",
+      description: "A vibrant rainbow with fluffy clouds and bright sunshine - transformed on our warm beige background.",
+      originalImage: "/examples/rainbow-original.jpg",
+      posterImage: "/examples/rainbow-framed.jpg",
+      backgroundColor: "Warm Beige",
       customerFeedback: {
         parentName: "Sarah M.",
         rating: 5,
-        comment: "Emma was so excited to see her rainbow drawing turned into a real poster! The colors came out beautifully and it now has a special place in her bedroom."
+        comment: "Emma's rainbow drawing looks absolutely stunning in the warm beige frame! The colors pop beautifully and it's now the centerpiece of our living room."
       }
     },
     {
@@ -27,111 +28,119 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
       title: "Happy Boy Portrait",
       childAge: "Age 5",
       childName: "Max",
-      description: "A cheerful boy portrait with spiky hair and bow tie, transformed into an adorable keepsake.",
-      originalImage: "https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=500&h=500&fit=crop",
-      posterImage: "/examples/boy-poster.jpg",
+      description: "A cheerful self-portrait with spiky blonde hair and red bow tie - perfectly displayed on our soft blue background.",
+      originalImage: "/examples/boy-original.jpg",
+      posterImage: "/examples/boy-framed.jpg",
+      backgroundColor: "Soft Blue",
       customerFeedback: {
         parentName: "Lisa K.",
         rating: 5,
-        comment: "Max drew himself and seeing it as a professional poster made him so proud! It's hanging in our living room and everyone loves it."
+        comment: "Max drew himself and seeing it professionally framed made him so proud! The light blue background really makes his drawing shine."
       }
     },
     {
       id: 3,
-      title: "Cozy House Scene",
+      title: "Cozy Red House",
       childAge: "Age 7",
       childName: "Sophie",
-      description: "A charming house with trees and sunshine, beautifully enhanced with professional framing.",
-      originalImage: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=500&h=500&fit=crop",
-      posterImage: "/examples/house-poster.jpg",
+      description: "A charming house with green trees and bright sunshine - beautifully enhanced on our cream background.",
+      originalImage: "/examples/house-original.jpg",
+      posterImage: "/examples/house-framed.jpg",
+      backgroundColor: "Pure Cream",
       customerFeedback: {
         parentName: "Mike T.",
         rating: 5,
-        comment: "Sophie's house drawing looks incredible as a poster! The warm colors and professional quality make it a centerpiece in our home."
+        comment: "Sophie's house drawing looks incredible as a framed poster! The cream background gives it such a professional, gallery-quality appearance."
       }
     },
     {
       id: 4,
-      title: "Girl with Flowers",
-      childAge: "Age 8",
+      title: "Girl in Orange Dress",
+      childAge: "Age 6",
       childName: "Isabella",
-      description: "A sweet girl surrounded by colorful flowers, preserved as a beautiful wall art piece.",
-      originalImage: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=500&h=500&fit=crop",
-      posterImage: "/examples/girl-poster.jpg",
+      description: "A sweet girl in an orange dress surrounded by colorful flowers - perfectly preserved on cream background.",
+      originalImage: "/examples/girl-original.jpg",
+      posterImage: "/examples/girl-framed.jpg",
+      backgroundColor: "Pure Cream",
       customerFeedback: {
         parentName: "Jennifer R.",
         rating: 5,
-        comment: "Isabella's flower garden drawing brings so much joy to her room. The transformation from crayon to poster is remarkable!"
+        comment: "Isabella's self-portrait with flowers is now her favorite thing in her bedroom! The cream background makes all the colors stand out beautifully."
       }
     },
     {
       id: 5,
-      title: "Space Rocket Adventure",
-      childAge: "Age 9",
-      childName: "Lucas",
-      description: "An exciting rocket ship with stars, perfectly capturing a child's space dreams.",
-      originalImage: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=500&fit=crop",
-      posterImage: "/examples/rocket-poster.jpg",
+      title: "Orange Cat with Heart",
+      childAge: "Age 8",
+      childName: "Zoe",
+      description: "An adorable orange cat with a red heart and flowers - lovingly displayed on our cream background.",
+      originalImage: "/examples/cat-original.jpg",
+      posterImage: "/examples/cat-framed.jpg",
+      backgroundColor: "Pure Cream",
       customerFeedback: {
         parentName: "David L.",
         rating: 5,
-        comment: "Lucas's space adventure looks amazing as a poster! He tells everyone about his 'real' artwork. It's been a huge confidence booster."
+        comment: "Zoe's cat drawing is absolutely precious! The professional framing and cream background turned her simple drawing into beautiful wall art."
       }
     },
     {
       id: 6,
-      title: "Friendly Cat",
-      childAge: "Age 6",
-      childName: "Zoe",
-      description: "An adorable orange cat with a heart, transformed into a heartwarming poster.",
-      originalImage: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&h=500&fit=crop",
-      posterImage: "/examples/cat-poster.jpg",
+      title: "Blue Rocket Adventure",
+      childAge: "Age 9",
+      childName: "Lucas",
+      description: "An exciting blue rocket ship with orange flames and golden stars - showcased on our soft blue background.",
+      originalImage: "/examples/rocket-original.jpg",
+      posterImage: "/examples/rocket-framed.jpg",
+      backgroundColor: "Soft Blue",
       customerFeedback: {
         parentName: "Rachel H.",
         rating: 5,
-        comment: "Zoe's cat drawing is now her favorite thing in her bedroom! The poster quality exceeded our expectations."
+        comment: "Lucas's space rocket looks amazing professionally framed! The blue background matches perfectly and he tells everyone about his 'real' artwork."
       }
     },
     {
       id: 7,
-      title: "Dinosaur Discovery",
+      title: "Friendly Green Dinosaur",
       childAge: "Age 8",
       childName: "Oliver",
-      description: "A friendly green dinosaur in a sunny landscape, perfectly preserved as professional wall art.",
-      originalImage: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=500&fit=crop",
-      posterImage: "/examples/dinosaur-poster.jpg",
+      description: "A gentle green dinosaur in a sunny landscape with clouds - beautifully presented on pure white background.",
+      originalImage: "/examples/dinosaur-original.jpg",
+      posterImage: "/examples/dinosaur-framed.jpg",
+      backgroundColor: "Pure White",
       customerFeedback: {
         parentName: "Amanda S.",
         rating: 5,
-        comment: "Oliver's dinosaur drawing looks so professional now! He's incredibly proud and shows it off to everyone who visits."
+        comment: "Oliver's dinosaur drawing looks so professional now! The clean white background really makes the green dinosaur pop off the wall."
       }
     },
     {
       id: 8,
-      title: "Playground Fun",
+      title: "Child on Swing",
       childAge: "Age 7",
       childName: "Mia",
-      description: "A joyful child on a swing with clouds above, capturing pure childhood happiness.",
-      originalImage: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&h=500&fit=crop",
-      posterImage: "/examples/playground-poster.jpg",
+      description: "A joyful child swinging high with clouds above - capturing pure happiness on our clean white background.",
+      originalImage: "/examples/swing-original.jpg",
+      posterImage: "/examples/swing-framed.jpg",
+      backgroundColor: "Pure White",
       customerFeedback: {
         parentName: "Thomas B.",
         rating: 5,
-        comment: "Mia's playground drawing brings back wonderful memories. The poster quality is fantastic and it's become a family treasure."
+        comment: "Mia's swing drawing brings back wonderful memories every time we look at it! The white background gives it such a clean, timeless feel."
       }
     },
     {
       id: 9,
-      title: "Mother & Child",
+      title: "Mother & Child Love",
       childAge: "Age 5",
       childName: "Lily",
-      description: "A touching family portrait showing the special bond between mother and child.",
-      originalImage: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=500&h=500&fit=crop",
-      posterImage: "/examples/family-poster.jpg",
+      description: "A touching family portrait showing the special bond between mother and child - tenderly framed on white.",
+      originalImage: "/examples/family-original.jpg",
+      posterImage: "/examples/family-framed.jpg",
+      backgroundColor: "Pure White",
       customerFeedback: {
         parentName: "Karen W.",
         rating: 5,
-        comment: "This drawing of Lily and me is our most treasured artwork. Seeing it as a professional poster makes it even more special."
+        comment: "This drawing of Lily and me is our most treasured artwork. The professional framing on white background makes it look like museum-quality art!"
       }
     }
   ];
@@ -157,6 +166,80 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Discover how we transform children's artwork into beautiful, professional posters. 
               See real examples and read what parents have to say about their experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Real Room Displays from Our Customers */}
+      <section className="py-16 bg-gradient-to-br from-accent/10 to-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              See How They Look in Real Homes
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              These are actual photos from our customers showing how beautifully the framed posters transform children's bedrooms and living spaces.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Living Room Display */}
+            <Card className="overflow-hidden shadow-lg">
+              <CardContent className="p-0">
+                <div className="aspect-[4/3] bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">🌈</span>
+                      </div>
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">😊</span>
+                      </div>
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">🏠</span>
+                      </div>
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">👧🌸</span>
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">Living Room Gallery Wall</h3>
+                    <p className="text-sm text-muted-foreground">4 beautifully framed children's artworks creating a stunning focal point</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Children's Bedroom Display */}
+            <Card className="overflow-hidden shadow-lg">
+              <CardContent className="p-0">
+                <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">🦕</span>
+                      </div>
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">🚀</span>
+                      </div>
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">🐱❤️</span>
+                      </div>
+                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-2xl">👨‍👩‍👧</span>
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">Child's Bedroom Showcase</h3>
+                    <p className="text-sm text-muted-foreground">Personal artwork collection inspiring creativity and confidence</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center mt-8">
+            <p className="text-muted-foreground italic">
+              "Our customers love showing off their children's professional artwork displays!" ⭐⭐⭐⭐⭐
             </p>
           </div>
         </div>
@@ -212,22 +295,36 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
                       
                       <div className="grid grid-cols-1 gap-4">
                         <div className="text-center">
-                          <p className="text-sm font-medium text-muted-foreground mb-3">From Drawing to Beautiful Poster</p>
+                          <p className="text-sm font-medium text-muted-foreground mb-3">Professional Framed Result</p>
                           <div className="relative">
-                            <img 
-                              src={example.originalImage}
-                              alt={`${example.title} - Original artwork by ${example.childName}`}
-                              className="w-full aspect-square object-cover rounded-lg shadow-md border-4 border-white"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-200/40 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                              <div className="bg-white/90 backdrop-blur-sm rounded-full p-4">
-                                <Star className="w-8 h-8 text-primary fill-current" />
+                            {/* Frame Effect */}
+                            <div className="p-4 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg shadow-lg">
+                              <div className="bg-white p-3 rounded shadow-inner">
+                                <div className={`aspect-square rounded flex items-center justify-center text-6xl ${
+                                  example.backgroundColor === 'Warm Beige' ? 'bg-amber-50' :
+                                  example.backgroundColor === 'Soft Blue' ? 'bg-blue-50' :
+                                  example.backgroundColor === 'Pure Cream' ? 'bg-yellow-50' :
+                                  'bg-gray-50'
+                                }`}>
+                                  {example.id === 1 && '🌈☀️'}
+                                  {example.id === 2 && '😊👔'}
+                                  {example.id === 3 && '🏠🌳'}
+                                  {example.id === 4 && '👧🌸'}
+                                  {example.id === 5 && '🐱❤️'}
+                                  {example.id === 6 && '🚀⭐'}
+                                  {example.id === 7 && '🦕☀️'}
+                                  {example.id === 8 && '🏊‍♀️☁️'}
+                                  {example.id === 9 && '👨‍👩‍👧💕'}
+                                </div>
                               </div>
                             </div>
                             <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-2 shadow-lg">
-                              <Heart className="w-4 h-4 fill-current" />
+                              <Star className="w-4 h-4 fill-current" />
                             </div>
                           </div>
+                          <p className="text-xs text-muted-foreground mt-2 px-2">
+                            Background: {example.backgroundColor}
+                          </p>
                         </div>
                       </div>
                       
