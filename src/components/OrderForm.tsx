@@ -161,16 +161,35 @@ export function OrderForm({ onNavigate }: OrderFormProps) {
                         />
                         <Label
                           htmlFor={option.id}
-                          className="flex flex-col items-center gap-3 p-4 border-2 border-border/50 rounded-xl cursor-pointer hover:border-primary/50 peer-checked:border-primary peer-checked:bg-primary/5 transition-all"
+                          className={`flex flex-col items-center gap-3 p-4 border-2 rounded-xl cursor-pointer transition-all ${
+                            selectedBackground === option.id
+                              ? 'border-primary bg-primary/10 shadow-md'
+                              : 'border-border/50 hover:border-primary/50'
+                          }`}
                         >
                           <div
-                            className="w-12 h-12 rounded-full border-2 border-border/20"
+                            className={`w-12 h-12 rounded-full border-2 ${
+                              selectedBackground === option.id
+                                ? 'border-primary ring-2 ring-primary/20'
+                                : 'border-border/20'
+                            }`}
                             style={{ backgroundColor: option.color }}
                           />
                           <div className="text-center">
-                            <p className="text-sm text-foreground">{option.name}</p>
+                            <p className={`text-sm ${
+                              selectedBackground === option.id
+                                ? 'text-primary font-medium'
+                                : 'text-foreground'
+                            }`}>
+                              {option.name}
+                            </p>
                             <p className="text-xs text-muted-foreground">{option.description}</p>
                           </div>
+                          {selectedBackground === option.id && (
+                            <div className="absolute -top-2 -right-2 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                              <Check className="w-4 h-4 text-primary-foreground" />
+                            </div>
+                          )}
                         </Label>
                       </div>
                     ))}
