@@ -2,6 +2,15 @@ import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { ArrowLeft, Star, Heart } from "lucide-react";
 
+// Import the actual images from assets
+import chatGptImage1 from '../assets/ChatGPT Image Nov 6, 2025, 10_32_12 PM.png';
+import chatGptImage2 from '../assets/ChatGPT Image Nov 6, 2025, 10_32_14 PM.png';
+import chatGptImage3 from '../assets/ChatGPT Image Nov 6, 2025, 10_32_25 PM.png';
+import designerImage1 from '../assets/Designer.png';
+import designerImage2 from '../assets/Designer (1).png';
+import designerImage3 from '../assets/Designer (2).png';
+import logoImage from '../assets/ae0cf63b379a9c48a9bc8b575fbffd4cb0aee8c6.png';
+
 interface ExamplesPageProps {
   onNavigate: (page: string) => void;
 }
@@ -10,137 +19,92 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
   const examples = [
     {
       id: 1,
-      title: "Rainbow & Sunshine",
-      childAge: "Age 6",
-      childName: "Emma",
-      description: "A vibrant rainbow with fluffy clouds and bright sunshine - transformed on our warm beige background.",
-      originalImage: "/examples/rainbow-original.jpg",
-      posterImage: "/examples/rainbow-framed.jpg",
-      backgroundColor: "Warm Beige",
+      title: "Living Room Gallery Wall",
+      childAge: "Ages 5-8",
+      childName: "Multiple Children",
+      description: "Four beautifully framed children's artworks creating a stunning focal point in this cozy living room.",
+      originalImage: chatGptImage1,
+      posterImage: chatGptImage1,
+      backgroundColor: "Professional Frames",
       customerFeedback: {
         parentName: "Sarah M.",
         rating: 5,
-        comment: "Emma's rainbow drawing looks absolutely stunning in the warm beige frame! The colors pop beautifully and it's now the centerpiece of our living room."
+        comment: "We love having all four kids' artwork professionally framed and displayed together! It's become the centerpiece of our living room and everyone who visits comments on how beautiful they look."
       }
     },
     {
       id: 2,
-      title: "Happy Boy Portrait",
-      childAge: "Age 5",
-      childName: "Max",
-      description: "A cheerful self-portrait with spiky blonde hair and red bow tie - perfectly displayed on our soft blue background.",
-      originalImage: "/examples/boy-original.jpg",
-      posterImage: "/examples/boy-framed.jpg",
-      backgroundColor: "Soft Blue",
+      title: "Children's Bedroom Art Display",
+      childAge: "Ages 6-9",
+      childName: "Lucas & Emma",
+      description: "A perfect bedroom gallery featuring rockets, rainbows, and family portraits in matching wooden frames.",
+      originalImage: chatGptImage2,
+      posterImage: chatGptImage2,
+      backgroundColor: "Warm Wood Frames",
       customerFeedback: {
         parentName: "Lisa K.",
         rating: 5,
-        comment: "Max drew himself and seeing it professionally framed made him so proud! The light blue background really makes his drawing shine."
+        comment: "The kids are so proud to see their artwork displayed like real art in their bedroom! The wooden frames give such a professional, gallery-quality look."
       }
     },
     {
       id: 3,
-      title: "Cozy Red House",
-      childAge: "Age 7",
-      childName: "Sophie",
-      description: "A charming house with green trees and bright sunshine - beautifully enhanced on our cream background.",
-      originalImage: "/examples/house-original.jpg",
-      posterImage: "/examples/house-framed.jpg",
-      backgroundColor: "Pure Cream",
+      title: "Cozy Reading Nook Display",
+      childAge: "Ages 4-7",
+      childName: "Sophie & Max",
+      description: "Beautiful artwork displayed above a children's reading area, creating an inspiring and creative space.",
+      originalImage: chatGptImage3,
+      posterImage: chatGptImage3,
+      backgroundColor: "Natural Wood",
       customerFeedback: {
         parentName: "Mike T.",
         rating: 5,
-        comment: "Sophie's house drawing looks incredible as a framed poster! The cream background gives it such a professional, gallery-quality appearance."
+        comment: "This corner of the house has become so special! The framed artwork above the reading nook inspires creativity and makes the kids feel like real artists."
       }
     },
     {
       id: 4,
-      title: "Girl in Orange Dress",
-      childAge: "Age 6",
-      childName: "Isabella",
-      description: "A sweet girl in an orange dress surrounded by colorful flowers - perfectly preserved on cream background.",
-      originalImage: "/examples/girl-original.jpg",
-      posterImage: "/examples/girl-framed.jpg",
-      backgroundColor: "Pure Cream",
+      title: "Modern Family Gallery",
+      childAge: "Various Ages",
+      childName: "Family Collection",
+      description: "A sophisticated display of children's artwork in clean, modern frames that complement any home decor.",
+      originalImage: designerImage1,
+      posterImage: designerImage1,
+      backgroundColor: "Contemporary Frames",
       customerFeedback: {
         parentName: "Jennifer R.",
         rating: 5,
-        comment: "Isabella's self-portrait with flowers is now her favorite thing in her bedroom! The cream background makes all the colors stand out beautifully."
+        comment: "These frames are absolutely perfect! They make the children's artwork look so professional and fit beautifully with our modern home decor."
       }
     },
     {
       id: 5,
-      title: "Orange Cat with Heart",
-      childAge: "Age 8",
-      childName: "Zoe",
-      description: "An adorable orange cat with a red heart and flowers - lovingly displayed on our cream background.",
-      originalImage: "/examples/cat-original.jpg",
-      posterImage: "/examples/cat-framed.jpg",
-      backgroundColor: "Pure Cream",
+      title: "Playroom Art Wall",
+      childAge: "Ages 3-9",
+      childName: "Multiple Artists",
+      description: "A vibrant collection of framed children's artwork that brings joy and color to any playroom or family space.",
+      originalImage: designerImage2,
+      posterImage: designerImage2,
+      backgroundColor: "Colorful Display",
       customerFeedback: {
         parentName: "David L.",
         rating: 5,
-        comment: "Zoe's cat drawing is absolutely precious! The professional framing and cream background turned her simple drawing into beautiful wall art."
+        comment: "The playroom looks amazing with all the framed artwork! It's like having a private art gallery of our children's creativity."
       }
     },
     {
       id: 6,
-      title: "Blue Rocket Adventure",
-      childAge: "Age 9",
-      childName: "Lucas",
-      description: "An exciting blue rocket ship with orange flames and golden stars - showcased on our soft blue background.",
-      originalImage: "/examples/rocket-original.jpg",
-      posterImage: "/examples/rocket-framed.jpg",
-      backgroundColor: "Soft Blue",
+      title: "Elegant Hallway Gallery",
+      childAge: "Ages 5-10",
+      childName: "Extended Family",
+      description: "A beautiful hallway transformation featuring professionally framed children's artwork in matching frames.",
+      originalImage: designerImage3,
+      posterImage: designerImage3,
+      backgroundColor: "Matching Set",
       customerFeedback: {
         parentName: "Rachel H.",
         rating: 5,
-        comment: "Lucas's space rocket looks amazing professionally framed! The blue background matches perfectly and he tells everyone about his 'real' artwork."
-      }
-    },
-    {
-      id: 7,
-      title: "Friendly Green Dinosaur",
-      childAge: "Age 8",
-      childName: "Oliver",
-      description: "A gentle green dinosaur in a sunny landscape with clouds - beautifully presented on pure white background.",
-      originalImage: "/examples/dinosaur-original.jpg",
-      posterImage: "/examples/dinosaur-framed.jpg",
-      backgroundColor: "Pure White",
-      customerFeedback: {
-        parentName: "Amanda S.",
-        rating: 5,
-        comment: "Oliver's dinosaur drawing looks so professional now! The clean white background really makes the green dinosaur pop off the wall."
-      }
-    },
-    {
-      id: 8,
-      title: "Child on Swing",
-      childAge: "Age 7",
-      childName: "Mia",
-      description: "A joyful child swinging high with clouds above - capturing pure happiness on our clean white background.",
-      originalImage: "/examples/swing-original.jpg",
-      posterImage: "/examples/swing-framed.jpg",
-      backgroundColor: "Pure White",
-      customerFeedback: {
-        parentName: "Thomas B.",
-        rating: 5,
-        comment: "Mia's swing drawing brings back wonderful memories every time we look at it! The white background gives it such a clean, timeless feel."
-      }
-    },
-    {
-      id: 9,
-      title: "Mother & Child Love",
-      childAge: "Age 5",
-      childName: "Lily",
-      description: "A touching family portrait showing the special bond between mother and child - tenderly framed on white.",
-      originalImage: "/examples/family-original.jpg",
-      posterImage: "/examples/family-framed.jpg",
-      backgroundColor: "Pure White",
-      customerFeedback: {
-        parentName: "Karen W.",
-        rating: 5,
-        comment: "This drawing of Lily and me is our most treasured artwork. The professional framing on white background makes it look like museum-quality art!"
+        comment: "Our hallway has been completely transformed! Guests always stop to admire the beautiful collection of framed children's artwork."
       }
     }
   ];
@@ -187,25 +151,14 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
             {/* Living Room Display */}
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-0">
-                <div className="aspect-[4/3] bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">🌈</span>
-                      </div>
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">😊</span>
-                      </div>
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">🏠</span>
-                      </div>
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">👧🌸</span>
-                      </div>
-                    </div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Living Room Gallery Wall</h3>
-                    <p className="text-sm text-muted-foreground">4 beautifully framed children's artworks creating a stunning focal point</p>
-                  </div>
+                <img 
+                  src={chatGptImage1}
+                  alt="Living room with framed children's artwork"
+                  className="w-full aspect-[4/3] object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Living Room Gallery Wall</h3>
+                  <p className="text-sm text-muted-foreground">Multiple beautifully framed children's artworks creating a stunning focal point</p>
                 </div>
               </CardContent>
             </Card>
@@ -213,25 +166,14 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
             {/* Children's Bedroom Display */}
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-0">
-                <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">🦕</span>
-                      </div>
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">🚀</span>
-                      </div>
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">🐱❤️</span>
-                      </div>
-                      <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <span className="text-2xl">👨‍👩‍👧</span>
-                      </div>
-                    </div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Child's Bedroom Showcase</h3>
-                    <p className="text-sm text-muted-foreground">Personal artwork collection inspiring creativity and confidence</p>
-                  </div>
+                <img 
+                  src={chatGptImage2}
+                  alt="Children's bedroom with framed artwork"
+                  className="w-full aspect-[4/3] object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Child's Bedroom Showcase</h3>
+                  <p className="text-sm text-muted-foreground">Personal artwork collection inspiring creativity and confidence</p>
                 </div>
               </CardContent>
             </Card>
@@ -251,18 +193,18 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
           <h2 className="text-2xl font-bold text-center mb-8 text-foreground">
             Popular Artwork Styles We Transform
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {examples.slice(0, 10).map((example, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {examples.slice(0, 6).map((example) => (
               <div key={example.id} className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                   <img 
                     src={example.originalImage}
                     alt={example.title}
-                    className="w-full aspect-square object-cover"
+                    className="w-full aspect-[4/3] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-2 left-2 right-2">
-                      <p className="text-white text-xs font-medium truncate">{example.title}</p>
+                    <div className="absolute bottom-3 left-3 right-3">
+                      <p className="text-white text-sm font-medium truncate">{example.title}</p>
                       <p className="text-white/80 text-xs">{example.childAge}</p>
                     </div>
                   </div>
@@ -295,35 +237,24 @@ export function ExamplesPage({ onNavigate }: ExamplesPageProps) {
                       
                       <div className="grid grid-cols-1 gap-4">
                         <div className="text-center">
-                          <p className="text-sm font-medium text-muted-foreground mb-3">Professional Framed Result</p>
+                          <p className="text-sm font-medium text-muted-foreground mb-3">Real Customer Photos</p>
                           <div className="relative">
-                            {/* Frame Effect */}
-                            <div className="p-4 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg shadow-lg">
-                              <div className="bg-white p-3 rounded shadow-inner">
-                                <div className={`aspect-square rounded flex items-center justify-center text-6xl ${
-                                  example.backgroundColor === 'Warm Beige' ? 'bg-amber-50' :
-                                  example.backgroundColor === 'Soft Blue' ? 'bg-blue-50' :
-                                  example.backgroundColor === 'Pure Cream' ? 'bg-yellow-50' :
-                                  'bg-gray-50'
-                                }`}>
-                                  {example.id === 1 && '🌈☀️'}
-                                  {example.id === 2 && '😊👔'}
-                                  {example.id === 3 && '🏠🌳'}
-                                  {example.id === 4 && '👧🌸'}
-                                  {example.id === 5 && '🐱❤️'}
-                                  {example.id === 6 && '🚀⭐'}
-                                  {example.id === 7 && '🦕☀️'}
-                                  {example.id === 8 && '🏊‍♀️☁️'}
-                                  {example.id === 9 && '👨‍👩‍👧💕'}
-                                </div>
+                            <img 
+                              src={example.originalImage}
+                              alt={`${example.title} - Real customer photo`}
+                              className="w-full aspect-[4/3] object-cover rounded-lg shadow-lg"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-purple-200/20 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                              <div className="bg-white/90 backdrop-blur-sm rounded-full p-4">
+                                <Star className="w-8 h-8 text-primary fill-current" />
                               </div>
                             </div>
                             <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-2 shadow-lg">
-                              <Star className="w-4 h-4 fill-current" />
+                              <Heart className="w-4 h-4 fill-current" />
                             </div>
                           </div>
                           <p className="text-xs text-muted-foreground mt-2 px-2">
-                            Background: {example.backgroundColor}
+                            Frame Style: {example.backgroundColor}
                           </p>
                         </div>
                       </div>
